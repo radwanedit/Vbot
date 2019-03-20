@@ -1685,8 +1685,8 @@ if(message.content.startsWith(prefix + "daily")) {
   if(message.content.startsWith(prefix + "بنجو")) {
   if(profile[message.author.id].lastDaily != moment().format('day')) {
     profile[message.author.id].lastDaily = moment().format('day')
-    profile[message.author.id].credits += 1000000
-     message.channel.send(`**${message.author.username} you collect your \`1000000\` :dollar: daily pounds**`)
+    profile[message.author.id].credits += 10000000
+     message.channel.send(`**${message.author.username} you collect your \`10000000\` :dollar: daily pounds**`)
 } else {
     message.channel.send(`**:stopwatch: | ${message.author.username}, your daily :yen: credits refreshes ${moment().endOf('day').fromNow()}**`)
 }
